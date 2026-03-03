@@ -1,0 +1,854 @@
+📄 PRODUCT REQUIREMENT DOCUMENT (PRD)
+1. 📌 Product Overview
+🏷 Product Name:
+
+INTERA DESIGN STUDIO (Working Title)
+
+🎯 Vision:
+
+To create a premium, interactive, high-conversion design studio website with:
+
+Storytelling
+
+Dynamic portfolio
+
+Smart cost calculator tool
+
+Media asset management
+
+Lead generation system
+
+Web + Mobile (Flutter)
+
+🧠 Target Audience:
+
+Interior design clients
+
+Real estate developers
+
+Premium home buyers
+
+Architects & contractors
+
+Luxury segment customers
+
+2. 🏗 Tech Stack Architecture
+🌐 Frontend (Web)
+
+React.js (Vite or Next.js recommended)
+
+Tailwind CSS
+
+Framer Motion (animations)
+
+Three.js (3D elements)
+
+React Hook Form
+
+Redux / Zustand (state management)
+
+📱 Mobile App
+
+Flutter
+
+Dart
+
+Firebase SDK integration
+
+🖥 Backend
+
+Node.js
+
+Express.js
+
+MongoDB
+
+Cloudinary (media storage)
+
+JWT authentication
+
+Stripe / Razorpay (optional payments)
+
+☁ Hosting
+
+Frontend: Vercel / Netlify
+
+Backend: Render / Railway / AWS
+
+Database: MongoDB Atlas
+
+Storage: Cloudinary / AWS S3
+
+3. 📂 Page Structure & Features
+🏠 1. HOME PAGE (Landing Page)
+4
+🎯 Objective:
+
+Convert visitors into leads.
+
+Sections:
+
+Hero Section
+
+3D interactive background (Three.js)
+
+Headline: “Luxury Interiors That Define You”
+
+CTA: Book Free Consultation
+
+Services Overview
+
+Residential
+
+Commercial
+
+Turnkey Projects
+
+Featured Projects Slider
+
+Dynamic from database
+
+Cost Estimator Preview
+
+“Check Your Budget in 60 Seconds”
+
+Testimonials
+
+Video + text
+
+CTA Section
+
+Lead Form
+
+💡 Conversion Elements:
+
+Sticky CTA button
+
+Exit-intent popup
+
+WhatsApp floating button
+
+📖 2. OUR STORY PAGE
+4
+Objective:
+
+Build emotional connection & trust.
+
+Sections:
+
+Founder Message
+
+Brand Timeline (interactive)
+
+Team Section
+
+Vision & Mission
+
+Awards & Certifications
+
+Feature:
+
+Animated scroll storytelling using Framer Motion.
+
+🖼 3. PORTFOLIO PAGE
+4
+Features:
+
+Filter by:
+
+Residential
+
+Office
+
+Budget
+
+Location
+
+Masonry Grid Layout
+
+Project Detail Page:
+
+Gallery
+
+Before/After slider
+
+Client testimonial
+
+Project budget range
+
+CTA
+
+Backend:
+
+Dynamic CRUD from admin panel.
+
+🧮 4. COST CALCULATOR TOOL
+4
+Purpose:
+
+Generate qualified leads.
+
+User Flow:
+
+Step 1: Property type
+Step 2: Size (sq ft slider)
+Step 3: Rooms selection
+Step 4: Material quality
+Step 5: Location
+
+Output:
+
+Estimated cost range + “Get Detailed Quote”
+
+Advanced Feature:
+
+AI-based suggestion model (future scope)
+
+PDF quote download
+
+Save result to user dashboard
+
+🎞 5. MEDIA ASSETS SYSTEM
+Purpose:
+
+Manage images, videos, documents.
+
+Features:
+
+Admin:
+
+Upload
+
+Tag
+
+Categorize
+
+Compress images automatically
+
+Bulk upload
+
+Storage:
+
+Cloudinary integration
+
+Auto webp conversion
+
+CDN optimization
+
+Frontend:
+
+Lazy loading
+
+Blur placeholder
+
+Video streaming support
+
+4. 🛠 Admin Dashboard (Internal)
+
+Features:
+
+Login (JWT based)
+
+Manage Projects
+
+Manage Blog
+
+Manage Leads
+
+View Analytics
+
+Update Calculator Pricing Logic
+
+Media Manager
+
+5. 👤 User Features
+
+Login / Register
+
+Save Projects
+
+Save Cost Estimates
+
+Book Consultation
+
+Download PDF
+
+6. 🔐 Authentication System
+
+JWT access + refresh token
+
+Role based access:
+
+Admin
+
+Editor
+
+User
+
+7. 📊 Analytics & Tracking
+
+Google Analytics
+
+Facebook Pixel
+
+Heatmap tracking (Hotjar)
+
+Lead tracking system
+
+8. 🧠 Database Structure (MongoDB)
+
+Collections:
+
+Users
+Projects
+Leads
+Testimonials
+CalculatorRules
+MediaFiles
+Blogs
+
+9. 🎨 UI/UX Guidelines
+
+Design Style:
+
+Minimalist
+
+Dark luxury theme
+
+Gold accents
+
+Micro interactions
+
+Smooth transitions
+
+Font:
+
+Playfair Display (headings)
+
+Inter (body)
+
+10. 📱 Flutter Mobile App (Future Expansion)
+
+Purpose:
+
+Show portfolio
+
+Cost calculator
+
+Lead booking
+
+Push notifications
+
+Architecture:
+
+Flutter frontend
+
+Same Node.js backend
+
+Firebase push notification
+
+11. 🧱 Development Roadmap
+Phase 1 (Week 1-2)
+
+UI Design (Figma)
+
+Database schema
+
+Backend setup
+
+Phase 2 (Week 3-4)
+
+Home + Story + Portfolio
+
+Phase 3 (Week 5)
+
+Cost calculator logic
+
+Lead system
+
+Phase 4 (Week 6)
+
+Admin dashboard
+
+Phase 5 (Week 7)
+
+Flutter app basic version
+
+12. 🚀 Scalability Plan
+
+Microservice architecture (future)
+
+Redis caching
+
+GraphQL integration
+
+AI interior recommendation engine
+
+Subscription model
+
+13. 💰 Monetization Strategy
+
+Direct project leads
+
+Premium consultation booking
+
+Affiliate material brands
+
+Paid downloadable design guides
+
+14. 📈 KPIs
+
+Cost calculator completion rate
+
+Lead conversion %
+
+Average session time
+
+Portfolio click depth
+
+Bounce rate
+
+15. Risks & Solutions
+Risk	Solution
+Slow loading	Image optimization + CDN
+Low leads	A/B testing
+Budget miscalculation	Admin pricing control
+Scalability	Modular architecture
+🔥 Final Summary
+
+This project is:
+
+✔ Conversion-focused
+✔ Luxury brand oriented
+✔ Fully scalable
+✔ Web + Mobile ready
+✔ SEO optimized
+✔ Admin manageable
+
+If you want, I can now:
+
+Write a developer-ready technical PRD
+
+Or create database schema code
+
+Or generate folder structure
+
+Or create UI wireframe breakdown
+
+Or convert this into an AI-agent prompt for building automatically**
+
+Tell me what level you want next 🚀
+
+Write a developer-ready technical PRD
+
+Here is your Developer-Ready Technical PRD
+(Structured for engineering execution, sprint planning, and backend/frontend alignment)
+
+📄 TECHNICAL PRODUCT REQUIREMENTS DOCUMENT
+Project: INTERA DESIGN STUDIO (Interactive Multi-Page Web App)
+1. 🧭 Technical Overview
+Objective
+
+Build a scalable, SEO-optimized, interactive web application with:
+
+Multi-page architecture
+
+Portfolio CMS
+
+Cost calculator tool
+
+Media asset manager
+
+Admin dashboard
+
+Mobile app (Flutter)
+
+Lead management system
+
+2. 🏗 System Architecture
+2.1 High-Level Architecture
+Client (React / Flutter)
+        ↓
+API Layer (Node.js + Express)
+        ↓
+MongoDB Atlas
+        ↓
+Cloudinary (Media Storage)
+        ↓
+Redis (Caching - optional future)
+3. 🖥 Frontend Architecture (React)
+Framework:
+
+React 18 (Vite OR Next.js recommended for SEO)
+
+Tailwind CSS
+
+Framer Motion
+
+Three.js
+
+Axios
+
+React Hook Form
+
+Zustand (state management)
+
+3.1 Folder Structure
+/src
+  /components
+  /pages
+  /layouts
+  /hooks
+  /services
+  /store
+  /utils
+  /assets
+  /types
+3.2 Pages & Routing
+Route	Page
+/	Home
+/our-story	Brand Story
+/portfolio	Portfolio Grid
+/portfolio/:id	Project Detail
+/calculator	Cost Tool
+/contact	Lead Form
+/login	Auth
+/dashboard	User Dashboard
+/admin	Admin Panel
+3.3 Core Frontend Features
+Home Page
+
+3D Hero (Three.js canvas)
+
+Featured Projects API call
+
+Testimonials slider
+
+CTA with form validation
+
+Portfolio
+
+Masonry Grid
+
+Filters (category, budget, location)
+
+Dynamic routing
+
+Cost Calculator
+
+Multi-step form
+
+Slider inputs
+
+Live estimate calculation
+
+API call for saving results
+
+4. 📱 Flutter Mobile App Architecture
+Architecture Pattern:
+
+MVVM
+
+Structure:
+/lib
+  /models
+  /views
+  /viewmodels
+  /services
+  /widgets
+Features:
+
+Portfolio listing
+
+Calculator tool
+
+Lead form
+
+Push notifications (Firebase)
+
+5. 🖥 Backend Architecture (Node.js)
+Stack:
+
+Node.js
+
+Express.js
+
+MongoDB (Mongoose)
+
+JWT Authentication
+
+Cloudinary SDK
+
+Multer (file handling)
+
+Helmet + CORS
+
+Morgan logger
+
+5.1 Folder Structure
+/server
+  /controllers
+  /routes
+  /models
+  /middlewares
+  /services
+  /utils
+  /config
+6. 📊 Database Design (MongoDB)
+6.1 Users Collection
+{
+  _id,
+  name,
+  email,
+  password,
+  role: "admin | editor | user",
+  savedEstimates: [],
+  createdAt
+}
+6.2 Projects Collection
+{
+  _id,
+  title,
+  category,
+  location,
+  budgetRange,
+  description,
+  images: [],
+  beforeAfter: [],
+  testimonial,
+  createdAt
+}
+6.3 Leads Collection
+{
+  _id,
+  name,
+  email,
+  phone,
+  projectType,
+  message,
+  status: "new | contacted | closed",
+  createdAt
+}
+6.4 CalculatorRules Collection
+{
+  basePricePerSqFt,
+  roomMultiplier,
+  materialMultiplier,
+  cityMultiplier
+}
+6.5 MediaFiles Collection
+{
+  _id,
+  url,
+  publicId,
+  type,
+  tags,
+  uploadedBy,
+  createdAt
+}
+7. 🔐 Authentication & Authorization
+Method:
+
+JWT (Access Token 15min)
+
+Refresh Token (7 days)
+
+Role-based middleware
+
+Middleware:
+authMiddleware
+adminMiddleware
+editorMiddleware
+8. 🔌 API Endpoints
+Auth
+Method	Endpoint
+POST	/api/auth/register
+POST	/api/auth/login
+POST	/api/auth/refresh
+Projects
+Method	Endpoint
+GET	/api/projects
+GET	/api/projects/:id
+POST	/api/projects
+PUT	/api/projects/:id
+DELETE	/api/projects/:id
+Leads
+Method	Endpoint
+POST	/api/leads
+GET	/api/leads (admin only)
+Calculator
+Method	Endpoint
+POST	/api/calculator/estimate
+Media
+Method	Endpoint
+POST	/api/media/upload
+DELETE	/api/media/:id
+9. 🧮 Cost Calculator Logic
+Formula Example:
+Base = sqFt * basePricePerSqFt
+RoomCost = rooms * roomMultiplier
+MaterialCost = materialMultiplier * Base
+LocationCost = cityMultiplier * Base
+
+TotalEstimate = Base + RoomCost + MaterialCost + LocationCost
+
+Logic handled in:
+
+/services/calculatorService.js
+10. ⚡ Performance Optimization
+
+Image WebP conversion
+
+Lazy loading
+
+Code splitting
+
+Gzip compression
+
+CDN (Cloudinary)
+
+MongoDB indexing
+
+Redis caching (future)
+
+11. 🛡 Security Measures
+
+Helmet headers
+
+Rate limiting
+
+Input validation (Joi / Zod)
+
+XSS protection
+
+CSRF protection
+
+Password hashing (bcrypt)
+
+12. 📊 Logging & Monitoring
+
+Morgan logger
+
+Winston logs
+
+Sentry error tracking
+
+Google Analytics
+
+13. 🧪 Testing Strategy
+
+Frontend:
+
+Jest
+
+React Testing Library
+
+Backend:
+
+Mocha / Jest
+
+Supertest
+
+E2E:
+
+Cypress
+
+14. 🚀 Deployment Plan
+
+Frontend:
+
+Vercel
+
+Backend:
+
+Render / AWS EC2
+
+Database:
+
+MongoDB Atlas
+
+CI/CD:
+
+GitHub Actions
+
+15. 🗓 Development Timeline (Engineering Sprint View)
+
+Sprint 1:
+
+Backend setup
+
+Auth system
+
+Database schema
+
+Sprint 2:
+
+Home + Portfolio frontend
+
+API integration
+
+Sprint 3:
+
+Calculator tool
+
+Lead system
+
+Sprint 4:
+
+Admin dashboard
+
+Media manager
+
+Sprint 5:
+
+Flutter app basic version
+
+16. 📈 Scalability Considerations
+
+Convert REST to GraphQL
+
+Microservice architecture
+
+Kubernetes (future scaling)
+
+Redis cache layer
+
+Horizontal scaling ready
+
+17. Acceptance Criteria
+
+✔ All pages responsive
+✔ Admin can CRUD projects
+✔ Calculator generates estimate
+✔ Leads stored securely
+✔ Media uploads optimized
+✔ JWT secure auth working
+✔ Lighthouse score 90+
+
+18. Future Enhancements
+
+AI design recommendation engine
+
+AR preview room visualizer
+
+Subscription-based premium access
+
+Multi-language support
+
+🔥 Final Engineering Summary
+
+This system is:
+
+Modular
+
+Scalable
+
+SEO-ready
+
+API-first
+
+Production-ready
+
+Mobile-compatible
+
+Admin-controlled

@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-gold-300: #ffd700;
+  --color-brand-gold-400: #e6b800;
+  --color-brand-gold-500: #cc9900;
+  --color-brand-gold-600: #b38600;
+  --color-brand-gold-700: #997300;
+  --color-brand-gold-800: #806000;
+  --color-brand-gold-900: #664d00;
+  --color-dark-bg: #0a0a0a;
+  --color-dark-surface: #121212;
+  --color-dark-surface-hover: #1f1f1f;
+  --color-light-divider: rgba(255, 255, 255, 0.08);
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+/* Browser fallbacks for scrollbars */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #3f3f46 #0a0a0a;
+}
+
+body {
+  background-color: var(--color-dark-bg);
+  color: #e2e8f0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  color: #f8fafc;
+  letter-spacing: 0.025em;
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: rgba(18, 18, 18, 0.6);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .glass-header {
+    background-color: rgba(10, 10, 10, 0.8);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  }
+
+  .gold-gradient-text {
+    background-image: linear-gradient(to right, var(--color-brand-gold-300), var(--color-brand-gold-500), var(--color-brand-gold-400));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-dark-bg, #0a0a0a);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #27272a;
+  border-radius: 9999px;
+  border: 2px solid var(--color-dark-bg, #0a0a0a);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3f3f46;
+}
+
+::selection {
+  background-color: rgba(204, 153, 0, 0.3);
+  color: var(--color-brand-gold-300);
+}

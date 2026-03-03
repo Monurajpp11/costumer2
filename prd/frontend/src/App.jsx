@@ -2,6 +2,8 @@ import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { Menu, X, Instagram, Twitter, Linkedin, ArrowRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import WhatsAppBtn from './components/WhatsAppBtn';
+import AIChatWidget from './components/AIChatWidget';
 
 // Layouts
 const MainLayout = ({ children }) => {
@@ -164,6 +166,10 @@ const MainLayout = ({ children }) => {
                     </div>
                 </div>
             </footer>
+
+            {/* Global Floating Widgets */}
+            <WhatsAppBtn />
+            <AIChatWidget />
         </div>
     );
 };

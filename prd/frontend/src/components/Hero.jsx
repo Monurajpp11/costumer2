@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import heroBg from '../assets/images/hero.png';
 
 const Hero = () => {
     return (
         <section className="relative w-full min-h-[100dvh] flex items-center justify-center overflow-hidden bg-dark-bg pt-20">
             {/* Background Graphic Placeholder for 3D */}
             <div className="absolute inset-0 bg-gradient-to-b from-dark-bg via-transparent to-dark-bg z-10" />
-            <div className="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity filter blur-[2px]" />
+            <div className="absolute inset-0 opacity-40 bg-cover bg-center mix-blend-luminosity filter blur-[1px]" style={{ backgroundImage: `url(${heroBg})` }} />
 
             {/* Ambient Lighting */}
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-gold-900/20 rounded-full blur-[100px] z-0" />

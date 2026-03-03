@@ -1,15 +1,17 @@
 import { motion } from 'framer-motion';
+import resImg from '../assets/images/service_residential.png';
+import comImg from '../assets/images/service_commercial.png';
 
 const services = [
     {
         title: 'Residential',
         desc: 'Bespoke designs for luxury villas, apartments, and penthouses matching your lifestyle.',
-        img: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1974&auto=format&fit=crop'
+        img: resImg
     },
     {
         title: 'Commercial',
         desc: 'Functional and aesthetic workspaces that inspire productivity and brand identity.',
-        img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop'
+        img: comImg
     },
     {
         title: 'Turnkey Projects',

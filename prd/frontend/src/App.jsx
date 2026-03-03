@@ -4,6 +4,12 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import WhatsAppBtn from './components/WhatsAppBtn';
 import AIChatWidget from './components/AIChatWidget';
+import SEOFooter from './components/SEOFooter';
+import { HelmetProvider } from 'react-helmet-async';
+import LocationPage from './pages/LocationPage';
+import ServiceDetail from './pages/ServiceDetail';
+import BlogIndex from './pages/BlogIndex';
+import BlogPost from './pages/BlogPost';
 
 // Layouts
 const MainLayout = ({ children }) => {
@@ -112,60 +118,7 @@ const MainLayout = ({ children }) => {
 
             <main className="flex-grow pt-24">{children}</main>
 
-            {/* Footer */}
-            <footer className="mt-24 border-t border-white/5 bg-dark-surface/30">
-                <div className="container mx-auto px-6 lg:px-12 py-16">
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8">
-                        <div className="md:col-span-2">
-                            <Link to="/" className="text-2xl font-serif font-bold tracking-widest text-slate-50 mb-6 block">INTERA.</Link>
-                            <p className="text-zinc-400 text-sm leading-relaxed max-w-sm mb-8">
-                                Crafting tailored luxury interiors that elevate everyday living and define your unique space.
-                            </p>
-                            <div className="flex gap-4">
-                                <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 hover:text-brand-gold-300 hover:border-brand-gold-300/50 transition-all">
-                                    <Instagram className="w-4 h-4" />
-                                </a>
-                                <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 hover:text-brand-gold-300 hover:border-brand-gold-300/50 transition-all">
-                                    <Twitter className="w-4 h-4" />
-                                </a>
-                                <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 hover:text-brand-gold-300 hover:border-brand-gold-300/50 transition-all">
-                                    <Linkedin className="w-4 h-4" />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h4 className="text-slate-50 font-medium mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
-                            <ul className="flex flex-col gap-4">
-                                {navLinks.map((link) => (
-                                    <li key={link.path}>
-                                        <Link to={link.path} className="text-zinc-400 hover:text-brand-gold-300 transition-colors text-sm">
-                                            {link.name}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h4 className="text-slate-50 font-medium mb-6 uppercase tracking-wider text-sm">Contact</h4>
-                            <ul className="flex flex-col gap-4 text-sm text-zinc-400">
-                                <li>hello@interadesign.com</li>
-                                <li>+1 (555) 123-4567</li>
-                                <li>123 Luxury Ave, Design District<br />New York, NY 10001</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-500">
-                        <p>&copy; {new Date().getFullYear()} Intera Design Studio. All rights reserved.</p>
-                        <div className="flex gap-6">
-                            <Link to="#" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>
-                            <Link to="#" className="hover:text-slate-300 transition-colors">Terms of Service</Link>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <SEOFooter />
 
             {/* Global Floating Widgets */}
             <WhatsAppBtn />
@@ -185,17 +138,25 @@ import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
     return (
-        <MainLayout>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/our-story" element={<Story />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/portfolio/:id" element={<ProjectDetail />} />
-                <Route path="/calculator" element={<Calculator />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/admin" element={<AdminDashboard />} />
-            </Routes>
-        </MainLayout>
+        <HelmetProvider>
+            <MainLayout>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/our-story" element={<Story />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/portfolio/:id" element={<ProjectDetail />} />
+                    <Route path="/calculator" element={<Calculator />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/admin" element={<AdminDashboard />} />
+
+                    {/* Dynamic SEO Routes */}
+                    <Route path="/locations/:slug" element={<LocationPage />} />
+                    <Route path="/services/:slug" element={<ServiceDetail />} />
+                    <Route path="/blog" element={<BlogIndex />} />
+                    <Route path="/blog/:slug" element={<BlogPost />} />
+                </Routes>
+            </MainLayout>
+        </HelmetProvider>
     )
 }
 

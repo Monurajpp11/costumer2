@@ -23,3 +23,6 @@ npm-debug.log*
 
 # Lock files (optional - uncomment to exclude)
 # package-lock.json
+
+# Local Netlify folder
+.netlify
